@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<head>
+    <script type="text/JavaScript" src="luckySevens.js"></script>
+    <title>Play Lucky Sevens!</title>
+
+    <!-- Bootstrap CDN copied from https://getbootstrap.com/docs/4.1/getting-started/introduction/ -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style>
+        h1, table.tr {
+            font-family: "Courier";
+            font-weight: bold;
+        }
+        body {
+            font-family: "Courier"; 
+        }
+    </style>
+        
+</head>
+    <div class="container"> <!-- All page content should be inside this .container div -->
+        <header>
+            <h1>Lucky Sevens</h1>
+        </header>
+
+        <form name="placeBet" onsubmit="return validateItems()">
+            <div class="form-group">
+                <label for="bet">Starting Bet:</label>
+                <input type="bet" class="form-control" id="bet">
+            </div>
+
+            <button type="submit" class="btn btn-outline-dark">Play</button>
+            <hr> 
+        </form>
+
+        <table id="results" class="table table-striped" style="display:none;">
+            <thead>
+                <tr>
+                    <th>results</th>
+                    <th></th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Starting Bet</td>
+                    <td><span id="gamemoney"></span></td>
+                </tr>
+                <tr>
+                    <td>Total Rolls Before Going Broke</td>
+                    <td><span id="numrolls"></span></td>
+                </tr>
+                <tr>
+                    <td>Highest Amount Won</td>
+                    <td><span id="highest"></span></td>
+                </tr>
+                <tr>
+                    <td>Roll Count at Highest Amount Won</td>
+                    <td><span id="highroll"></span></td>
+                </tr>
+
+            </tbody>
+        </table>
+        
+
+    </div>
+</body> 
+
+</body>

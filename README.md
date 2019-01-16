@@ -1,2 +1,1 @@
-# practice
-playing with git
+# javascript_tutorial
